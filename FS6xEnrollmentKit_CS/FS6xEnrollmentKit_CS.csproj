@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52E9F605-E992-4A37-A0A4-048F27CEC03F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FS6xEnrollmentKit_CS</RootNamespace>
+    <AssemblyName>FS6xEnrollmentKit_CS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>FS6xEnrollmentKit_CS.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>image\futronic_logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcceptedImage.cs" />
+    <Compile Include="AnsiITL2007.cs" />
+    <Compile Include="FormAcquisition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAcquisition.Designer.cs">
+      <DependentUpon>FormAcquisition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfiguration.Designer.cs">
+      <DependentUpon>FormConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEnlarge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEnlarge.Designer.cs">
+      <DependentUpon>FormEnlarge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRecordType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRecordType.Designer.cs">
+      <DependentUpon>FormRecordType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSaveFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSaveFolder.Designer.cs">
+      <DependentUpon>FormSaveFolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUnavailabilityReason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUnavailabilityReason.Designer.cs">
+      <DependentUpon>FormUnavailabilityReason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPAnsi.cs" />
+    <Compile Include="FPDataInterchange.cs" />
+    <Compile Include="FPDevice.cs" />
+    <Compile Include="FPInfo.cs" />
+    <Compile Include="FPMapping.cs" />
+    <Compile Include="FPVerify.cs" />
+    <Compile Include="LedControl.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyBitmapFile.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowFPImage.cs" />
+    <EmbeddedResource Include="FormAcquisition.resx">
+      <DependentUpon>FormAcquisition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfiguration.resx">
+      <DependentUpon>FormConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEnlarge.resx">
+      <DependentUpon>FormEnlarge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRecordType.resx">
+      <DependentUpon>FormRecordType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSaveFolder.resx">
+      <DependentUpon>FormSaveFolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUnavailabilityReason.resx">
+      <DependentUpon>FormUnavailabilityReason.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetHelper\MathAPIHelper\MathAPIHelper.vcxproj">
+      <Project>{512EACFB-5216-4496-B97B-BA606AE92C61}</Project>
+      <Name>MathAPIHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="image\2_Thumbs.bmp" />
+    <Content Include="image\futronic_logo.ico" />
+    <Content Include="image\Hands_empty.bmp" />
+    <Content Include="image\Left_4_Fingers.bmp" />
+    <Content Include="image\Left_Index.bmp" />
+    <Content Include="image\Left_Little.bmp" />
+    <Content Include="image\Left_Middle.bmp" />
+    <Content Include="image\Left_Ring.bmp" />
+    <Content Include="image\Left_Thumb.bmp" />
+    <Content Include="image\nfiq.bmp" />
+    <Content Include="image\Right_4_Fingers.bmp" />
+    <Content Include="image\Right_Index.bmp" />
+    <Content Include="image\Right_Little.bmp" />
+    <Content Include="image\Right_Middle.bmp" />
+    <Content Include="image\Right_Ring.bmp" />
+    <Content Include="image\Right_Thumb.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
